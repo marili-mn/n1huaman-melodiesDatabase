@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <title>musicDatabase Interface</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</head>
+<body>
+    <br>
+    <form id="soundForm" onsubmit="postSound(event)">
+        <input type="text" name="title" placeholder="Soundtrack name" required>
+        <input type="text" name="genre" placeholder="Description" required>
+        <input type="text" name="duration" placeholder="Duration" required>
+        <input type="text" name="images" placeholder="URL Image" required>
+        <button type="submit" id="btnSubmit">Agregar</button>
+    </form>
+    <br>
+    
+    <div id="soundList" class="sound-list"></div>
+    
+    <footer>
+        <p>&copy; Backend-Integrador mariDev @ All Rights Reserved</p>
+    </footer>
+    <script src="Script.js"></script>
+</body>
+</html>
